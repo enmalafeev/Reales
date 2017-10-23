@@ -7,86 +7,383 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700" rel="stylesheet">
 </head>
 <body>
-	<header class="header">
-		<div class="logo">
-			<div class="logo__img"></div>
-			<div class="logo__text">Reales</div>
-		</div>
-		<div class="header__menu">
-			<ul class="nav">
-				<li><a href="#"></a>Sign Up</li>
-				<li><a href="#"></a>Sign In</li>
-				<li><a href="#"></a>List a Property</li>
-			</ul>
-		</div>	
-	</header>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-top">
+				<div class="logo">
+					<div class="logo__img">
+						<svg 
+							 xmlns="http://www.w3.org/2000/svg"
+							 xmlns:xlink="http://www.w3.org/1999/xlink"
+							 width="30px" height="24px">
+							<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+							 d="M29.870,12.533 L28.716,13.917 C28.617,14.029 28.487,14.098 28.326,14.123 L28.270,14.123 C28.108,14.123 27.978,14.079 27.879,13.992 L15.000,3.200 L2.121,13.992 C1.972,14.092 1.823,14.136 1.674,14.123 C1.513,14.098 1.383,14.029 1.283,13.917 L0.130,12.533 C0.030,12.408 -0.013,12.262 -0.001,12.093 C0.012,11.925 0.080,11.791 0.204,11.691 L13.586,0.487 C13.983,0.163 14.454,0.001 15.000,0.001 C15.546,0.001 16.018,0.163 16.414,0.487 L20.955,4.303 L20.955,0.656 C20.955,0.481 21.011,0.338 21.123,0.226 C21.234,0.113 21.377,0.057 21.551,0.057 L25.124,0.057 C25.298,0.057 25.441,0.113 25.552,0.226 C25.664,0.338 25.720,0.481 25.720,0.656 L25.720,8.287 L29.795,11.691 C29.919,11.791 29.988,11.925 30.000,12.093 C30.013,12.262 29.970,12.408 29.870,12.533 ZM4.299,13.711 L15.000,4.845 L25.701,13.711 C25.713,13.736 25.720,13.774 25.720,13.823 L25.720,22.801 C25.720,23.125 25.602,23.406 25.366,23.643 C25.131,23.880 24.851,23.999 24.529,23.999 L17.382,23.999 L17.382,16.816 L12.618,16.816 L12.618,23.999 L5.471,23.999 C5.149,23.999 4.869,23.880 4.634,23.643 C4.398,23.406 4.280,23.125 4.280,22.801 L4.280,13.823 C4.280,13.810 4.283,13.792 4.289,13.767 C4.296,13.743 4.299,13.724 4.299,13.711 Z"/>
+						</svg>
+					</div>
+					<div class="logo__text">Reales</div>
+				</div>
+			</div>
+			<div class="header__menu">
+				<ul class="nav">
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Sign In</a></li>
+					<li><a href="#">List a Property</a></li>
+				</ul>
+			</div>	
+		</header>
 
-	<div class="hero">
-		<h1 class="hero__title">NOW IT'S EASY TO FIND YOUR FUTURE HOME</h1>
-		<p class="hero__desc">WITH REALES - REAL ESTATE HTML TEMPLATE</p>
-		<button class="btn">Learn More</button>
+		<div class="hero">
+			<h1 class="hero__title">NOW IT'S EASY TO FIND YOUR FUTURE HOME</h1>
+			<p class="hero__desc">WITH REALES - REAL ESTATE HTML TEMPLATE</p>
+			<a class="btn">Learn More</a>
+			<section class="search">
+				<div class="search-wrap">
+					<form action="#" class="main-form">
+						<input type="text" placeholder="City" class="city">
+						<select name="Bedrooms" class="bedrooms">
+							<option value="1 bed">Bedrooms</option>
+							<option value="1 bed">2</option>
+						</select>
+						<select name="Bathrooms" class="bathrooms">
+							<option value="1 bed">Bathrooms</option>
+							<option value="1 bed">2</option>
+						</select>
+						<div class="input-group">
+							<div class="price-label">$</div>
+							<input type="text" placeholder="From" class="from">
+						</div>
+						<div class="input-group">
+							<div class="price-label">$</div>
+							<input type="text" placeholder="To" class="to">
+						</div>
+						<label><input type="checkbox" class="checkbox"><span class="checkbox-text">For Rent</span></label>
+						<label><input type="checkbox" class="checkbox"><span class="checkbox-text">For Sell</span></label>
+						<input type="submit" value="Search" class="submit">
+					</form>
+				</div>
+			</section>
+		</div>
+		
+
+		<section class="info">
+			<h2 class="info__title">Find your new place with Reales</h2>
+			<p class="info__desc">Fusce risus metus, placerat in consectetur eu, porttitor a est sed sed dolor lorem cras adipiscing dolor lorem cras adipiscing</p>
+		</section>
+
+		<section class="service">
+
+			<h2 class="service__title">Our Services</h2>
+
+			<div class="feature">
+				<img src="@" alt="feat1" class="feature__img">
+				<h3 class="feature__title">Find places anywhere in the world</h3>
+				<p class="feature__desc">Lorem ipsum dolor sit amet, consectetue adipiscing elit</p>	
+			</div>
+
+			<div class="feature">
+				<img src="@" alt="feat1" class="feature__img">
+				<h3 class="feature__title">We have agents with experience</h3>
+				<p class="feature__desc">Lorem ipsum dolor sit amet, consectetue adipiscing elit</p>	
+			</div>
+
+			<div class="feature">
+				<img src="@" alt="feat1" class="feature__img">
+				<h3 class="feature__title">Buy or rent beautiful properties</h3>
+				<p class="feature__desc">Lorem ipsum dolor sit amet, consectetue adipiscing elit</p>	
+			</div>
+
+			<div class="feature">
+				<img src="@" alt="feat1" class="feature__img">
+				<h3 class="feature__title">With agent account you can list properties</h3>
+				<p class="feature__desc">Lorem ipsum dolor sit amet, consectetue adipiscing elit</p>	
+			</div>
+
+		</section>
+
+		<section class="properties">
+			<h2 class="properties__title">Recently Listed Properties</h2>
+			<div class="property">
+				<span>FOR SALE</span>
+				<div class="price">$1,750,000</div>
+				<hr>
+				<p>Modern Residence in New York</p>
+				<span>39 Remsen St, Brooklyn, NY 11201</span>
+				<div class="stars">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+				</div>
+			</div>
+
+			<div class="property">
+				<span>FOR SALE</span>
+				<div class="price">$1,750,000</div>
+				<hr>
+				<p>Modern Residence in New York</p>
+				<span>39 Remsen St, Brooklyn, NY 11201</span>
+				<div class="stars">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+				</div>
+			</div>
+
+			<div class="property">
+				<span>FOR SALE</span>
+				<div class="price">$1,750,000</div>
+				<hr>
+				<p>Modern Residence in New York</p>
+				<span>39 Remsen St, Brooklyn, NY 11201</span>
+				<div class="stars">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+				</div>
+			</div>
+
+			<div class="property">
+				<span>FOR SALE</span>
+				<div class="price">$1,750,000</div>
+				<hr>
+				<p>Modern Residence in New York</p>
+				<span>39 Remsen St, Brooklyn, NY 11201</span>
+				<div class="stars">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+				</div>
+			</div>
+
+			<div class="property">
+				<span>FOR SALE</span>
+				<div class="price">$1,750,000</div>
+				<hr>
+				<p>Modern Residence in New York</p>
+				<span>39 Remsen St, Brooklyn, NY 11201</span>
+				<div class="stars">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+				</div>
+			</div>
+
+			<div class="property">
+				<span>FOR SALE</span>
+				<div class="price">$1,750,000</div>
+				<hr>
+				<p>Modern Residence in New York</p>
+				<span>39 Remsen St, Brooklyn, NY 11201</span>
+				<div class="stars">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+				</div>
+			</div>
+
+		</section>
+
+		<section class="our-agents">
+			<div class="agent">
+				<img src="" alt="agent1" class="agent__img">
+				<span class="agent__name">John Smith</span>
+				<div class="stars">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+				</div>
+				<div class="social">
+					<a href="#" class="social__icon">
+						<img src="" alt="mail" class="social__img">
+					</a>
+					<a href="#" class="social__icon">
+						<img src="" alt="facebook" class="social__img">
+					</a>
+					<a href="#" class="social__icon">
+						<img src="" alt="twitter" class="social__img">
+					</a>
+					<a href="#" class="social__icon">
+						<img src="" alt="google" class="social__img">
+					</a>
+				</div>	
+			</div>
+
+			<div class="agent">
+				<img src="" alt="agent1" class="agent__img">
+				<span class="agent__name">John Smith</span>
+				<div class="stars">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+				</div>
+				<div class="social">
+					<a href="#" class="social__icon">
+						<img src="" alt="mail" class="social__img">
+					</a>
+					<a href="#" class="social__icon">
+						<img src="" alt="facebook" class="social__img">
+					</a>
+					<a href="#" class="social__icon">
+						<img src="" alt="twitter" class="social__img">
+					</a>
+					<a href="#" class="social__icon">
+						<img src="" alt="google" class="social__img">
+					</a>
+				</div>	
+			</div>
+
+			<div class="agent">
+				<img src="" alt="agent1" class="agent__img">
+				<span class="agent__name">John Smith</span>
+				<div class="stars">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+				</div>
+				<div class="social">
+					<a href="#" class="social__icon">
+						<img src="" alt="mail" class="social__img">
+					</a>
+					<a href="#" class="social__icon">
+						<img src="" alt="facebook" class="social__img">
+					</a>
+					<a href="#" class="social__icon">
+						<img src="" alt="twitter" class="social__img">
+					</a>
+					<a href="#" class="social__icon">
+						<img src="" alt="google" class="social__img">
+					</a>
+				</div>	
+			</div>
+
+			<div class="agent">
+				<img src="" alt="agent1" class="agent__img">
+				<span class="agent__name">John Smith</span>
+				<div class="stars">
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+					<div class="star"></div>
+				</div>
+				<div class="social">
+					<a href="#" class="social__icon">
+						<img src="" alt="mail" class="social__img">
+					</a>
+					<a href="#" class="social__icon">
+						<img src="" alt="facebook" class="social__img">
+					</a>
+					<a href="#" class="social__icon">
+						<img src="" alt="twitter" class="social__img">
+					</a>
+					<a href="#" class="social__icon">
+						<img src="" alt="google" class="social__img">
+					</a>
+				</div>	
+			</div>
+		</section>
+
+		<section class="testimonials">
+			<h2 class="testimonials__title">
+				Testimonials
+			</h2>
+			<div class="Testimonials__img"></div>
+			<p class="testimonials__par">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words</p>
+			<span>Rust Cohle</span>
+			<div class="testimonials__selectors">
+				<div class="selector"></div>
+				<div class="selector"></div>
+			</div>
+		</section>
+		
+		<div class="empty"></div>
 	</div>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__col">
+					<h3>Company</h3>
+					<ul>
+						<li>About</li>
+						<li>Jobs</li>
+						<li>Press</li>
+						<li>Blog</li>
+						<li>Help</li>
+						<li>Poliies</li>
+						<li>Terms & Privacy</li>
+					</ul>
+				</div>
+
+				<div class="footer__col">
+					<h3>Disover</h3>
+					<ul>
+						<li>Become a Memeber</li>
+						<li>Properties List</li>
+						<li>Sign In</li>
+						<li>Widgets</li>
+						<li>Components</li>
+						<li>Tables</li>
+						<li>Lists</li>
+					</ul>
+				</div>
+
+				<div class="footer__col">
+					<h3>Get in Touch</h3>
+					<div class="phone">
+						800 234 67 89
+					</div>
+					<div class="address">
+						516 Green St San Francisco, CA 94133 United States
+					</div>
+
+					<div class="social">
+						<a href="#" class="social__icon">
+							<img src="" alt="facebook" class="social__img">
+						</a>
+						<a href="#" class="social__icon">
+							<img src="" alt="twitter" class="social__img">
+						</a>
+						<a href="#" class="social__icon">
+							<img src="" alt="google" class="social__img">
+						</a>
+						<a href="#" class="social__icon">
+							<img src="" alt="linkedin" class="social__img">
+						</a>
+					</div>	
+				</div>
+
+				<div class="footer__col">
+					<h3>Subscribe to Our Newsletter</h3>
+					<form action="#">
+						<input type="text" name="email" placeholder="Email Address">
+						<input type="submit" value="Subscribe">
+					</form>
+				</div>
+
+				<div class="copyright">
+					Real estate web application
+					© 2014
+				</div>
+
+			</div>
+		</footer>
 	
-	<section class="search">
-		<form action="#">
-			<input type="text" placeholder="City">
-			<select name="Bedrooms" id="bedrooms">
-				<option value="1 bed">Bedrooms</option>
-				<option value="1 bed">2</option>
-			</select>
-			<select name="Bathrooms" id="bathrooms">
-				<option value="1 bed">Bathrooms</option>
-				<option value="1 bed">2</option>
-			</select>
-			<input type="text" placeholder="From">
-			<input type="text" placeholder="To">
-			<input type="checkbox">
-			<span>For Rent</span>
-			<input type="checkbox">
-			<span>For Sell</span>
-			<input type="submit" value="Search">
-		</form>
-
-	</section>
-
-	<section class="info">
-		<h2 class="info__title">Find your new place with Reales</h2>
-		<p class="info__desc">Fusce risus metus, placerat in consectetur eu, porttitor a est sed sed dolor lorem cras adipiscing</p>
-	</section>
-
-	<section class="service">
-
-		<h2 class="service__title">Our Services</h2>
-
-		<div class="feature">
-			<img src="@" alt="feat1" class="feature__img">
-			<h3 class="feature__title">Find places anywhere in the world</h3>
-			<p class="feature__desc">Lorem ipsum dolor sit amet, consectetue adipiscing elit</p>	
-		</div>
-
-		<div class="feature">
-			<img src="@" alt="feat1" class="feature__img">
-			<h3 class="feature__title">We have agents with experience</h3>
-			<p class="feature__desc">Lorem ipsum dolor sit amet, consectetue adipiscing elit</p>	
-		</div>
-
-		<div class="feature">
-			<img src="@" alt="feat1" class="feature__img">
-			<h3 class="feature__title">Buy or rent beautiful properties</h3>
-			<p class="feature__desc">Lorem ipsum dolor sit amet, consectetue adipiscing elit</p>	
-		</div>
-
-		<div class="feature">
-			<img src="@" alt="feat1" class="feature__img">
-			<h3 class="feature__title">With agent account you can list properties</h3>
-			<p class="feature__desc">Lorem ipsum dolor sit amet, consectetue adipiscing elit</p>	
-		</div>
-
-	</section>
-
-	<section class="properties">
-		<h2 class="properties__title">Recently Listed Properties</h2>
-	</section>
-
 </body>
 </html>

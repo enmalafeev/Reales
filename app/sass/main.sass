@@ -1,7 +1,259 @@
 @import "vars"
 @import "common"
+@import "normalize"
 
 html
-	@include regular 
+	width: 100%
+	height: 100%
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+*,
+*::before,
+*::after
+	-webkit-box-sizing: inherit 
+	-moz-box-sizing: inherit 
+	box-sizing: inherit 
+
+body
+	@include regular
+	font-size: 16px 
+	
+.wrapper
+	width: 100%
+	min-height: 100%
+	position: relative
+	overflow: hidden
+
+.empty
+	height: 340px
+
+.container
+	width: 1110px
+	margin: 0 auto
+	
+ul
+	padding: 0
+	margin: 0
+	
+	li
+		list-style: none	
+		
+p 
+	padding: 0
+	margin: 0
+	
+a
+	text-decoration: none
+
+// HEADER	
+.header
+	width: 100%
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 2
+	@include clearfix
+	@include gradient
+
+.logo
+	float: left
+	padding-top: 24px
+	
+	&__img
+		display: inline-block
+	
+	padding-left: 20px
+	&__text
+		@include light
+		display: inline-block
+		font-size: 20px
+		color: #FFF 
+		
+		
+.header__menu
+	float: right
+	margin-top: 20px
+	
+	padding-right: 20px
+	color: #fff
+	
+.nav
+	font-size: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	li
+		display: inline-block
+		font-size: 13px
+		a
+			display: block
+			padding: 15px
+			color: #fff
+			-webkit-border-radius: 2px 
+			border-radius: 2px
+			-webkit-transition: all 0.1s ease
+			 -moz-transition: all 0.1s ease
+			 -ms-transition: all 0.1s ease
+			 -o-transition: all 0.1s ease
+			 transition: all 0.1s ease 
+	
+			&:hover
+				background-color: $blue 
+	
+.hero
+	background: #a3a3a3 url("../img/hero.jpg") no-repeat 50% 50%
+	background-size: cover
+	height: 100vh
+	padding-top: 215px
+	text-align: center
+	position: relative 
+	&__title
+		@include bold
+		@include gradient
+		display: inline-block
+		padding-left: 20px
+		padding-right: 20px  
+		color: #fff
+		font-size: 40px
+		margin: 0
+			
+	&__desc
+		@include bold
+		@include gradient
+		margin-bottom: 25px
+		color: #fff
+		font-size: 14px
+		
+		
+// BUTTONS
+.btn
+	display: inline-block
+	padding: 16px 20px
+	margin: 0 auto
+	background-color: #333333 
+	border: none
+	color: #fff
+	font-size: 14px
+	-webkit-border-radius: 2px 
+	border-radius: 2px 
+	&:hover
+		background-color: $blue
+		-webkit-transition: all 0.3s ease
+		 -moz-transition: all 0.3s ease
+		 -ms-transition: all 0.3s ease
+		 -o-transition: all 0.3s ease
+		 transition: all 0.3s ease 
+		
+.submit
+	@include regular
+	color: white
+	background-color: $blue
+	border: none 
+
+		
+// SEARCH
+.search
+	width: 100%
+	background-color: rgba(0,0,0,.5)
+	position: absolute
+	bottom: 0
+	left: 0
+	z-index: 2  
+	
+.search-wrap
+	width: 1110px
+	margin: 0 auto
+	
+ 
+	
+.main-form
+	padding-top: 20px
+	padding-bottom: 20px
+	display: flex
+	-webkit-flex-direction: row 
+	-ms-flex-direction: row 
+	flex-direction: row
+	-webkit-justify-content: space-between
+	 justify-content: space-between 
+	
+input
+	padding: 8px 
+	margin-right: 12px
+	&:last-child
+		margin-right: 0 
+		
+		
+.input-group
+	display: flex
+	-webkit-justify-content: flex-start 
+	justify-content: flex-start 
+	width: 210px
+	height: 38px
+	
+	
+.city
+	width: 178px
+
+.bedrooms, 
+.bathrooms
+	color: $grey
+	padding: 8px
+	margin-right: 12px
+	
+.price-label
+	font-size: 13px
+	display: inline-block
+	line-height: 38px
+	width: 33px
+	height: 38px
+	background-color: #f7f7f7
+	border: 1px solid #dfdfdf
+
+.from,
+.to
+	font-size: 13px
+	width: 178px
+
+label
+	text-align: left	
+
+.checkbox
+	width: 18px
+	height: 18px
+
+.checkbox-text
+	@include regular
+	color: $white
+	
+
+// INFO
+.info
+	width: 100%
+	background-color: $blue
+	text-align: center
+	padding-top: 35px
+	padding-bottom: 35px 
+	&__title
+		@include light
+		font-size: 26px
+		color: $white
+		margin: 0
+		padding-bottom: 20px
+		
+	&__desc
+		@include light-italic
+		width: 470px
+		margin: 0 auto 
+		color: $white
+
+	
 
 
+
+// FOOTER
+.footer
+	height: 340px
+	margin-top: -340px
+	position: relative 
