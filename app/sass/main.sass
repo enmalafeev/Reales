@@ -29,7 +29,7 @@ body
 	height: 340px
 
 .container
-	width: 1110px
+	width: 1100px
 	margin: 0 auto
 	
 ul
@@ -234,7 +234,8 @@ label
 	background-color: $blue
 	text-align: center
 	padding-top: 35px
-	padding-bottom: 35px 
+	padding-bottom: 35px
+	margin-bottom: 45px 
 	&__title
 		@include light
 		font-size: 26px
@@ -248,7 +249,73 @@ label
 		margin: 0 auto 
 		color: $white
 
+// SERVICE
+.service
+	background-color: $white
+	text-align: center
+	&__title
+	 	@include light
+	 	font-size: 22px
+	 	margin: 0
+	 	margin-bottom: 20px	
+	 	
+.feature-wrap
+	width: 1110px
+	margin: 0 auto
+	display: flex
+	-webkit-flex-direction: row
+	-ms-flex-direction: row
+	flex-direction: row
 	
+.feature
+	width: 275px
+	&__link
+		background-color: $white
+		&:hover
+			background-color: $blue
+			color: $white
+			-webkit-border-radius: 5px 
+			border-radius: 5px
+			transform: scale(1.15)
+			-webkit-transition: 0.2s ease 
+			  -moz-transition: 0.2s ease 
+			  -ms-transition: 0.2s ease 
+			  -o-transition: 0.2s ease 
+			  transition: 0.2s ease
+	   
+	&__title
+		@include light
+		font-size: 22px
+		color: $blue
+		z-index: 2 
+		
+	&__desc
+		@include light
+		font-size: 13px
+		color: #999999
+		z-index: 2 
+	
+
+// PROPERTIES
+.properties
+	background-color: $white
+	text-align: center
+	&__title
+		@include light
+		font-size: 22px
+	
+.property-wrap
+	width: 1100px
+	margin: 0 auto
+	font-size: 0 
+	
+.property
+	width: 350px
+	display: inline-block
+	font-size: 16px
+	margin-right: 15px
+	&:last-child
+		margin-right: 0 
 
 
 
