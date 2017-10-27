@@ -531,6 +531,8 @@ a {
     background: -o-linear-gradient(top, rgba(84, 84, 84, 0.65) 0%, rgba(163, 163, 163, 0) 100%);
     background: linear-gradient(to bottom, rgba(84, 84, 84, 0.65) 0%, rgba(163, 163, 163, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6545454', endColorstr='#00a3a3a3',GradientType=0 );
+    width: 350px;
+    margin: 0 auto;
     margin-bottom: 25px;
     color: #fff;
     font-size: 14px; }
@@ -587,14 +589,11 @@ a {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
-  -webkit-justify-content: space-between;
-    -webkit-justify-content-justify-content: space-between; }
+  -webkit-justify-content: space-around;
+    -webkit-justify-content-justify-content: space-around; }
 
 input {
-  padding: 8px;
-  margin-right: 12px; }
-  input:last-child {
-    margin-right: 0; }
+  padding: 8px; }
 
 .input-group {
   display: -webkit-box;
@@ -614,8 +613,7 @@ input {
 .bedrooms,
 .bathrooms {
   color: #515151;
-  padding: 8px;
-  margin-right: 12px; }
+  padding: 8px; }
 
 .price-label {
   font-size: 13px;
@@ -686,6 +684,7 @@ label {
 .feature-wrap {
   width: 1110px;
   margin: 0 auto;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -698,8 +697,13 @@ label {
 
 .feature {
   width: 275px; }
+  .feature__img {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto; }
   .feature__link {
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    text-align: center; }
     .feature__link:hover {
       background-color: #0eaaa6;
       color: #ffffff;
@@ -727,8 +731,22 @@ label {
     font-style: normal;
     line-height: 1.2;
     font-size: 13px;
+    padding-bottom: 32px;
     color: #999999;
     z-index: 2; }
+
+.pin {
+  background: url("../img/pin.png") no-repeat 50%;
+  color: #0eaaa6; }
+
+.user {
+  background: url("../img/user.png") no-repeat center; }
+
+.house {
+  background: url("../img/house.png") no-repeat center; }
+
+.upload {
+  background: url("../img/upload.png") no-repeat center; }
 
 .properties {
   background-color: #ffffff;
@@ -738,20 +756,64 @@ label {
     font-weight: 300;
     font-style: normal;
     line-height: 1.2;
-    font-size: 22px; }
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px; }
 
 .property-wrap {
   width: 1100px;
   margin: 0 auto;
-  font-size: 0; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row; }
 
 .property {
   width: 350px;
-  display: inline-block;
-  font-size: 16px;
-  margin-right: 15px; }
+  height: 212px;
+  margin-right: 15px;
+  margin-bottom: 20px; }
   .property:last-child {
     margin-right: 0; }
+
+.prop1 {
+  background: url("../img/1.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.prop2 {
+  background: url("../img/2.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.prop3 {
+  background: url("../img/3.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.prop4 {
+  background: url("../img/4.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.prop5 {
+  background: url("../img/5.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.prop6 {
+  background: url("../img/6.jpg") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover; }
 
 .footer {
   height: 340px;

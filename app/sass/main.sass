@@ -122,6 +122,8 @@ a
 	&__desc
 		@include bold
 		@include gradient
+		width: 350px
+		margin: 0 auto 
 		margin-bottom: 25px
 		color: #fff
 		font-size: 14px
@@ -166,8 +168,6 @@ a
 	width: 1110px
 	margin: 0 auto
 	
- 
-	
 .main-form
 	padding-top: 20px
 	padding-bottom: 20px
@@ -175,15 +175,11 @@ a
 	-webkit-flex-direction: row 
 	-ms-flex-direction: row 
 	flex-direction: row
-	-webkit-justify-content: space-between
-	 justify-content: space-between 
+	-webkit-justify-content: space-around
+	 justify-content: space-around 
 	
 input
-	padding: 8px 
-	margin-right: 12px
-	&:last-child
-		margin-right: 0 
-		
+	padding: 8px 		
 		
 .input-group
 	display: flex
@@ -192,6 +188,7 @@ input
 	width: 210px
 	height: 38px
 	
+		
 	
 .city
 	width: 178px
@@ -200,7 +197,6 @@ input
 .bathrooms
 	color: $grey
 	padding: 8px
-	margin-right: 12px
 	
 .price-label
 	font-size: 13px
@@ -262,6 +258,7 @@ label
 .feature-wrap
 	width: 1110px
 	margin: 0 auto
+	margin-bottom: 30px
 	display: flex
 	-webkit-flex-direction: row
 	-ms-flex-direction: row
@@ -269,8 +266,14 @@ label
 	
 .feature
 	width: 275px
+	&__img
+		width: 70px
+		height: 70px
+		margin: 0 auto
+
 	&__link
 		background-color: $white
+		text-align: center
 		&:hover
 			background-color: $blue
 			color: $white
@@ -292,9 +295,22 @@ label
 	&__desc
 		@include light
 		font-size: 13px
+		padding-bottom: 32px
 		color: #999999
 		z-index: 2 
+		
+.pin
+	background: url("../img/pin.png") no-repeat 50%
+	color: $blue
 	
+.user
+	background: url("../img/user.png") no-repeat center
+	
+.house
+	background: url("../img/house.png") no-repeat center
+	
+.upload
+	background: url("../img/upload.png") no-repeat center				
 
 // PROPERTIES
 .properties
@@ -303,19 +319,64 @@ label
 	&__title
 		@include light
 		font-size: 22px
+		margin: 0
+		padding: 0
+		margin-bottom: 30px 
 	
 .property-wrap
 	width: 1100px
 	margin: 0 auto
-	font-size: 0 
+	display: flex
+	-webkit-flex-wrap: wrap 
+	-ms-flex-wrap: wrap 
+	flex-wrap: wrap
+	-webkit-flex-direction: row 
+	-ms-flex-direction: row 
+	flex-direction: row   
 	
 .property
 	width: 350px
-	display: inline-block
-	font-size: 16px
+	height: 212px
 	margin-right: 15px
+	margin-bottom: 20px
 	&:last-child
 		margin-right: 0 
+		
+.prop1
+	background: url("../img/1.jpg") no-repeat center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	
+.prop2
+	background: url("../img/2.jpg") no-repeat center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	
+.prop3
+	background: url("../img/3.jpg") no-repeat center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	
+.prop4
+	background: url("../img/4.jpg") no-repeat center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	
+.prop5
+	background: url("../img/5.jpg") no-repeat center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	
+.prop6
+	background: url("../img/6.jpg") no-repeat center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
 
 
 
