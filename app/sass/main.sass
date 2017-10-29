@@ -136,6 +136,8 @@ a
 	margin: 0 auto
 	background-color: #333333 
 	border: none
+	-webkit-border-radius: 3px 
+	border-radius: 3px 
 	color: #fff
 	font-size: 14px
 	-webkit-border-radius: 2px 
@@ -152,8 +154,15 @@ a
 	@include regular
 	color: white
 	background-color: $blue
-	border: none 
+	border: none
+	-webkit-border-radius: 2px 
+	border-radius: 2px	
+	&:hover
+		background-color: rgba(14, 170, 166, .8) 
 
+	
+	
+// END BUTTONS
 		
 // SEARCH
 .search
@@ -179,7 +188,10 @@ a
 	 justify-content: space-around 
 	
 input
-	padding: 8px 		
+	padding: 8px
+	-webkit-border-radius: 2px 
+	 		border-radius: 2px  	
+
 		
 .input-group
 	display: flex
@@ -197,6 +209,8 @@ input
 .bathrooms
 	color: $grey
 	padding: 8px
+	-webkit-border-radius: 2px 
+	border-radius: 2px 
 	
 .price-label
 	font-size: 13px
@@ -213,16 +227,25 @@ input
 	width: 178px
 
 label
-	text-align: left	
+	display: inline-block
+	text-align: center
+	width: 80px
+	height: 38px
+	line-height: 38px	
 
 .checkbox
+	display: inline-block
+	vertical-align: middle 
 	width: 18px
 	height: 18px
 
 .checkbox-text
 	@include regular
+	display: inline-block
 	color: $white
-	
+	line-height: 38px
+
+// END SEARCH	
 
 // INFO
 .info
@@ -304,7 +327,7 @@ label
 	color: $blue
 	
 .user
-	background: url("../img/user.png") no-repeat center
+	background: url("../img/user.png") no-repeat center 
 	
 .house
 	background: url("../img/house.png") no-repeat center
@@ -339,49 +362,163 @@ label
 	height: 212px
 	margin-right: 15px
 	margin-bottom: 20px
+	-webkit-border-radius: 3px 
+	border-radius: 3px 
+	position: relative
+	overflow: hidden 
 	&:last-child
-		margin-right: 0 
+		margin-right: 0
+	img
+		width: 100%
+		height: 100%
+	&:hover
+		.caption
+			top: 0
+		 
+.caption
+	position: absolute
+	top: -100%
+	left: 0
+	background: rgba(0,0,0,0.7) 
+	width: 100%
+	height: 100%
+	color: $white
+	-webkit-border-radius: 3px 
+	border-radius: 3px 
+	-webkit-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s
+   -o-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s  
+   -ms-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s 
+   -moz-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s 
+   transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s
+
+	span
+		@include regular
+		display: inline-block
+		font-size: 10px
+		background-color: $yellow
+		text-transform: uppercase
+		-webkit-border-radius: 2px 
+		border-radius: 2px
+		padding: 3px
+		margin-top: 16px
+	
+	p
+		@include light
+		font-size: 18px
 		
-.prop1
-	background: url("../img/1.jpg") no-repeat center
+	i
+		@include italic
+		font-size: 11px
+		
+hr
+	width: 210px
+		
+.price
+	@include light
+	font-size: 30px
+	margin-top: 20px
+		 
+.stars
+	width: 90px
+	margin: 0 auto
+	margin-top: 15px 
+
+.star
+	display: inline-block
+	width: 14px
+	height: 14px
+	background: url("../img/star.png") no-repeat center
 	-webkit-background-size: cover 
 	-o-background-size: cover 
-	background-size: cover 
+	background-size: cover
 	
-.prop2
-	background: url("../img/2.jpg") no-repeat center
+.star--inactive
+	display: inline-block
+	width: 14px
+	height: 14px
+	background: url("../img/star-o.png") no-repeat center
 	-webkit-background-size: cover 
 	-o-background-size: cover 
-	background-size: cover 
+	background-size: cover
 	
-.prop3
-	background: url("../img/3.jpg") no-repeat center
-	-webkit-background-size: cover 
-	-o-background-size: cover 
-	background-size: cover 
+// END PROPERTIES
+
+// OUR AGENTS
+.our-agents
+	background-color: $white
+	text-align: center
+
+	&__title
+		@include light
+		font-size: 22px
+		margin: 0 auto
+		padding-bottom: 20px
+		
+.agents
+	width: 1100px
+	margin: 0 auto
+	display: flex
+	-webkit-flex-direction: row 
+	-ms-flex-direction: row 
+	flex-direction: row
+	-webkit-flex-wrap: no-wrap 
+	-ms-flex-wrap: no-wrap 
+	flex-wrap: no-wrap
+	-webkit-justify-content: space-around 
+	justify-content: space-around    
+
+.agent
+	width: 150px
 	
-.prop4
-	background: url("../img/4.jpg") no-repeat center
-	-webkit-background-size: cover 
-	-o-background-size: cover 
-	background-size: cover 
+	&__img
+		width: 150px
+		height: 150px
+		-webkit-border-radius: 50% 
+		border-radius: 50%
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		margin-bottom: 16px      
+		
+	&__name
+		@include light
+		font-size: 16px
+		
+		
+.social
+	width: 138px
+	min-height: 32px
+	margin: 0 auto
+	font-size: 0
+	margin-top: 12px 
 	
-.prop5
-	background: url("../img/5.jpg") no-repeat center
-	-webkit-background-size: cover 
-	-o-background-size: cover 
-	background-size: cover 
-	
-.prop6
-	background: url("../img/6.jpg") no-repeat center
-	-webkit-background-size: cover 
-	-o-background-size: cover 
-	background-size: cover 
+	&__icon
+		display: inline-block
+		width: 32px
+		height: 32px
+		font-size: 16px
+		margin-right: 3px
+		&:last-child
+			margin-right: 0
 
 
+							
+			
+
+	 	
+
+ 
+
+
+// END OUR AGENTS
 
 // FOOTER
 .footer
 	height: 340px
 	margin-top: -340px
 	position: relative 
+	
+
+	
