@@ -8,6 +8,7 @@ html
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
 	box-sizing: border-box
+	
 *,
 *::before,
 *::after
@@ -31,6 +32,15 @@ body
 .container
 	width: 1100px
 	margin: 0 auto
+	display: flex
+	-webkit-flex-direction: row 
+	-ms-flex-direction: row 
+	flex-direction: row
+	-webkit-flex-wrap: nowrap 
+	 -ms-flex-wrap: nowrap 
+	 flex-wrap: nowrap
+	-webkit-justify-content: space-between 
+	  justify-content: space-between   
 	
 ul
 	padding: 0
@@ -447,6 +457,7 @@ hr
 .our-agents
 	background-color: $white
 	text-align: center
+	margin-bottom: 60px 
 
 	&__title
 		@include light
@@ -503,22 +514,180 @@ hr
 		&:last-child
 			margin-right: 0
 
-
-							
-			
-
-	 	
-
- 
-
-
 // END OUR AGENTS
+// TESTIMONIALS
+.testimonials
+	width: 700px
+	margin: 0 auto
+	text-align: center
+	
+	&__title
+		@include light
+		font-size: 22px
+		margin: 0 auto
+		padding-bottom: 20px
+		
+	&__img
+		float: left
+		width: 100px
+		height: 100px
+		display: inline-block
+		-webkit-border-radius: 50% 
+		border-radius: 50%
+		background-color: $grey
+		background-image: url('../img/testi.jpeg')
+		-webkit-background-size: cover 
+	    -o-background-size: cover 
+	    background-size: cover
+		background-position: 50% 50% 
+		background-repeat: no-repeat 
+		
+	&__par
+		float: right
+		padding-top: 15px
+		padding-bottom: 10px
+		@include italic
+		width: 580px
+		display: inline-block
+		text-align: left
+		
+		
+	&__author
+		float: right
+		@include bold
+		text-align: left
+		width: 580px
+		min-height: 22px
+
+		    
+.review
+	@include clearfix
+	width: 700px
+	
+.testimonials__selectors
+	margin-bottom: 35px
+
+.selector
+	display: inline-block
+	width: 10px
+	height: 10px
+	-webkit-border-radius: 50% 
+	border-radius: 50% 
+	background-color: #b3b3b3
+	&:hover
+		background-color: #000000 
+
+// END TESTIMONIALS			
+
 
 // FOOTER
 .footer
+	width: 100%
 	height: 340px
 	margin-top: -340px
-	position: relative 
+	position: relative
+	background-color: $dark-grey 
 	
+.footer__col
+	width: 25%
+	margin-bottom: 60px
+	
+	.phone
+		@include regular
+		font-size: 20px
+		color: $white
+		position: relative
+		padding-left: 25px
+		margin-bottom: 15px 
+		
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			background: url('../img/phone.png') no-repeat center
+			width: 20px
+			height: 20px
+	.address
+		width: 150px
+		color: $white
+		@include light
+		font-size: 13px
+		margin-bottom: 18px
+	
+	h3
+		color: #c6e4e3 
+		@include light
+		font-size: 16px
+		margin: 0
+		margin-top: 40px
+		margin-bottom: 20px
+		
+	ul
+		@include regular
+		color: $white
+		
+		a
+			line-height: 1.5
+			color: $white
+			 
+
+.social
+	width: 140px
+	margin: 0
+	
+	a
+		display: inline-block
+		width: 32px
+		height: 32px
+		-webkit-border-radius: 50% 
+		border-radius: 50% 
+		border: 1px solid $white
+		position: relative 
+		
+		&:hover
+			background-color: rgba(14,170,166,0.5)
+			
+	.fb
+		position: absolute
+		top: 8px
+		left: 13px
+		
+	.tw
+		position: absolute
+		top: 9px
+		left: 10px
+		
+	.g
+		position: absolute
+		top: 9px
+		left: 9px
+
+
+	.in
+		position: absolute
+		top: 9px
+		left: 11px
+	
+
+
+.email
+	width: 260px
+	height: 38px
+	-webkit-border-radius: 3px 
+	border-radius: 3px
+	margin-bottom: 15px
+	font-size: 13px 
+
+.sumbit--lg
+	width: 260px
+	height: 38px
+
+.copyright
+	text-align: center
+	width: 158px
+	margin: 0 auto
+	font-size: 12px
+	color: #999999
 
 	
