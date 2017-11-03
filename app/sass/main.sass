@@ -1,6 +1,7 @@
 @import "vars"
 @import "common"
 @import "normalize"
+@import "fonts"
 
 html
 	width: 100%
@@ -16,8 +17,13 @@ html
 	-moz-box-sizing: inherit 
 	box-sizing: inherit 
 
+h1,
+h2,
+h3
+	font-weight: 300
+
 body
-	@include regular
+	font-family: "OpenSansRegular", 'sans-serif' 
 	font-size: 16px 
 	
 .wrapper
@@ -76,7 +82,7 @@ a
 	
 	padding-left: 20px
 	&__text
-		@include light
+		font-family: "OpenSansLight", 'sans-serif'
 		display: inline-block
 		font-size: 20px
 		color: #FFF 
@@ -120,7 +126,7 @@ a
 	text-align: center
 	position: relative 
 	&__title
-		@include bold
+		font-family: "OpenSansBold", 'sans-serif'
 		@include gradient
 		display: inline-block
 		padding-left: 20px
@@ -130,7 +136,7 @@ a
 		margin: 0
 			
 	&__desc
-		@include bold
+		font-family: "OpenSansBold", 'sans-serif'
 		@include gradient
 		width: 350px
 		margin: 0 auto 
@@ -161,7 +167,7 @@ a
 		 transition: all 0.3s ease 
 		
 .submit
-	@include regular
+	font-family: "OpenSansRegular", 'sans-serif' 
 	color: white
 	background-color: $blue
 	border: none
@@ -241,19 +247,24 @@ label
 	text-align: center
 	width: 80px
 	height: 38px
-	line-height: 38px	
+	line-height: 38px
+	font-size: 0	
 
 .checkbox
 	display: inline-block
+	font-size: 13px
 	vertical-align: middle 
 	width: 18px
 	height: 18px
 
 .checkbox-text
-	@include regular
+	font-family: 'OpenSansRegular', 'sans-serif'
 	display: inline-block
+	vertical-align: middle
+	padding-left: 5px
 	color: $white
 	line-height: 38px
+	font-size: 13px
 
 // END SEARCH	
 
@@ -266,14 +277,16 @@ label
 	padding-bottom: 35px
 	margin-bottom: 45px 
 	&__title
-		@include light
+		font-family: "OpenSansLight", 'sans-serif'
+		font-weight: lighter 
 		font-size: 26px
 		color: $white
 		margin: 0
 		padding-bottom: 20px
 		
 	&__desc
-		@include light-italic
+		font-family: "OpenSansLight", 'sans-serif'
+		font-style: italic 
 		width: 470px
 		margin: 0 auto 
 		color: $white
@@ -283,7 +296,7 @@ label
 	background-color: $white
 	text-align: center
 	&__title
-	 	@include light
+	 	font-family: "OpenSansLight", 'sans-serif'
 	 	font-size: 22px
 	 	margin: 0
 	 	margin-bottom: 20px	
@@ -296,45 +309,60 @@ label
 	-webkit-flex-direction: row
 	-ms-flex-direction: row
 	flex-direction: row
+	-webkit-justify-content: space-between 
+	justify-content: space-between 
 	
 .feature
-	width: 275px
+	width: 265px
+	min-height: 270px
+	position: relative
+	background-color: $white
+	text-align: center 
+	
 	&__img
-		width: 70px
-		height: 70px
-		margin: 0 auto
+		width: 100%
+		height: 75px
+		margin-top: 30px
+		
 
 	&__link
+		display: block
 		background-color: $white
-		text-align: center
+		
 		&:hover
 			background-color: $blue
-			color: $white
 			-webkit-border-radius: 5px 
 			border-radius: 5px
-			transform: scale(1.15)
+			transform: scale(1.1)
 			-webkit-transition: 0.2s ease 
 			  -moz-transition: 0.2s ease 
 			  -ms-transition: 0.2s ease 
 			  -o-transition: 0.2s ease 
 			  transition: 0.2s ease
+			.feature__title,
+			.feature__desc
+				color: $white
 	   
 	&__title
-		@include light
+		width: 100%
+		min-height: 22px
+		padding: 0 10px 
+		font-family: "OpenSansLight", 'sans-serif'
+		font-weight: 300
 		font-size: 22px
 		color: $blue
-		z-index: 2 
+		margin-top: 20px
+		margin-bottom: 25px
 		
 	&__desc
-		@include light
+		font-family: "OpenSansLight", 'sans-serif'
 		font-size: 13px
 		padding-bottom: 32px
 		color: #999999
-		z-index: 2 
+		width: 100%
 		
 .pin
 	background: url("../img/pin.png") no-repeat 50%
-	color: $blue
 	
 .user
 	background: url("../img/user.png") no-repeat center 
@@ -350,7 +378,7 @@ label
 	background-color: $white
 	text-align: center
 	&__title
-		@include light
+		font-family: "OpenSansLight", 'sans-serif'
 		font-size: 22px
 		margin: 0
 		padding: 0
@@ -402,7 +430,7 @@ label
    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1) 0s
 
 	span
-		@include regular
+		font-family: 'OpenSansRegular', 'sans-serif'
 		display: inline-block
 		font-size: 10px
 		background-color: $yellow
@@ -413,18 +441,18 @@ label
 		margin-top: 16px
 	
 	p
-		@include light
+		font-family: "OpenSansLight", 'sans-serif'
 		font-size: 18px
 		
 	i
-		@include italic
+		font-family: "OpenSansItalic", 'sans-serif'
 		font-size: 11px
 		
 hr
 	width: 210px
 		
 .price
-	@include light
+	font-family: "OpenSansLight", 'sans-serif'
 	font-size: 30px
 	margin-top: 20px
 		 
@@ -460,7 +488,7 @@ hr
 	margin-bottom: 60px 
 
 	&__title
-		@include light
+		font-family: "OpenSansLight", 'sans-serif'
 		font-size: 22px
 		margin: 0 auto
 		padding-bottom: 20px
@@ -494,7 +522,7 @@ hr
 		margin-bottom: 16px      
 		
 	&__name
-		@include light
+		font-family: "OpenSansLight", 'sans-serif'
 		font-size: 16px
 		
 		
@@ -522,7 +550,7 @@ hr
 	text-align: center
 	
 	&__title
-		@include light
+		font-family: "OpenSansLight", 'sans-serif'
 		font-size: 22px
 		margin: 0 auto
 		padding-bottom: 20px
@@ -546,7 +574,7 @@ hr
 		float: right
 		padding-top: 15px
 		padding-bottom: 10px
-		@include italic
+		font-family: "OpenSansItalic", 'sans-serif'
 		width: 580px
 		display: inline-block
 		text-align: left
@@ -554,7 +582,7 @@ hr
 		
 	&__author
 		float: right
-		@include bold
+		font-family: "OpenSansBold", 'sans-serif'
 		text-align: left
 		width: 580px
 		min-height: 22px
@@ -593,7 +621,7 @@ hr
 	margin-bottom: 60px
 	
 	.phone
-		@include regular
+		font-family: 'OpenSansRegular', 'sans-serif'
 		font-size: 20px
 		color: $white
 		position: relative
@@ -611,20 +639,20 @@ hr
 	.address
 		width: 150px
 		color: $white
-		@include light
+		font-family: "OpenSansLight", 'sans-serif'
 		font-size: 13px
 		margin-bottom: 18px
 	
 	h3
 		color: #c6e4e3 
-		@include light
+		font-family: "OpenSansLight", 'sans-serif'
 		font-size: 16px
 		margin: 0
 		margin-top: 40px
 		margin-bottom: 20px
 		
 	ul
-		@include regular
+		font-family: 'OpenSansRegular', 'sans-serif'
 		color: $white
 		
 		a
