@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reales Explorer</title>
+	<link rel="stylesheet" href="css/explore.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		
+		<header class="header">
+
+			<div class="search">
+				<input type="text" class="search__input">
+				<button class="btn btn--search"></button>
+			</div>
+				
+			<div class="notifications">
+				<div class="notifications-wrap">
+					<div class="notifications__item"></div>
+					<div class="user-block">
+						<div class="user-block__logo"></div>
+						<span class="user-block__name">John Smith</span>
+					</div>
+				</div>
+			</div>	
+		</header>
+
+		<div class="sidebar">
+			<div class="sidebar__logo"></div>
+
+			<ul>
+				<li><a href="#">Nav</a></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Add</a></li>
+				<li><a href="#">Colors</a></li>
+				<li><a href="#">Layer</a></li>
+				<li><a href="#">Chain</a></li>
+			</ul>
+
+			<div class="user-block">
+				<div class="user-block__logo"></div>
+			</div>
+		</div>
+
+		<div class="map"></div>
+		
+		<div class="settings">
+			
+			<div class="filters-block">
+				<h3 class="filters-block__title">Filter your results</h3>
+				<button class="filters-block__btn"></button>
+				<form action="" class="form">
+					<h4 class="property-type">Property Type</h4>
+
+					<select name="property-type">
+						<option value="all">All</option>
+						<option value="all">Property1</option>
+						<option value="all">Property2</option>
+					</select>
+
+					<div class="range-wrap">
+						<h4 class="range__title">Price Range</h4>
+						<input type="range" min="0" max="100" value="25">
+						<h4 class="range__title">Area Range</h4>
+						<input type="range" min="0" max="100" value="25">
+					</div>
+
+					<div class="counters">
+						<h4 class="counters__title">Bedrooms</h4>
+						<input type="number">
+						<h4 class="counters__title">Bathrooms</h4>
+						<input type="number">
+					</div>
+
+				</form>
+
+			</div>
+
+			<div class="results">
+				<div class="results-card">
+					<img src="" alt="" class="results-card__img">
+					<h3 class="results-card__title">Modern Residence in New York</h3>
+					<span class="results-card__sesc">39 Remsen St, Brooklyn, NY 11201</span>
+					<div class="stars">
+						<div class="star"></div>
+						<div class="star"></div>
+						<div class="star"></div>
+						<div class="star"></div>
+						<div class="star star--inactive"></div>
+					</div>
+					<div class="info">
+						<span class="info__item">3</span>
+						<span class="info__item">2</span>
+						<span class="info__item">2640 Sq Ft</span>
+					</div>
+				</div>
+
+				<div class="results-card">
+					<img src="" alt="" class="results-card__img">
+					<h3 class="results-card__title">Modern Residence in New York</h3>
+					<span class="results-card__sesc">39 Remsen St, Brooklyn, NY 11201</span>
+					<div class="stars">
+						<div class="star"></div>
+						<div class="star"></div>
+						<div class="star"></div>
+						<div class="star"></div>
+						<div class="star star--inactive"></div>
+					</div>
+					<div class="info">
+						<span class="info__item">3</span>
+						<span class="info__item">2</span>
+						<span class="info__item">2640 Sq Ft</span>
+					</div>
+				</div>
+
+				<div class="pagination">
+					<ul class="pagination__list">
+						<li class="pagination__item">1<a href="#"></a></li>
+						<li class="pagination__item">2<a href="#"></a></li>
+						<li class="pagination__item">3<a href="#"></a></li>
+						<li class="pagination__item">4<a href="#"></a></li>
+						<li class="pagination__item">5<a href="#"></a></li>
+					</ul>
+				</div>
+
+			</div>	
+
+		</div>
+
+	</div>	
+
+</body>
+</html>
