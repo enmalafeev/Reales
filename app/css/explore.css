@@ -88,7 +88,16 @@ a {
 .wrapper {
   width: 1366px;
   min-height: 768px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+    -webkit-flex-wrap--ms-flex-wrap: wrap;
+    -webkit-flex-wrap-flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+    -webkit-justify-content-justify-content: space-between; }
 
 .header {
   height: 60px;
@@ -126,6 +135,7 @@ a {
     padding-left: 20px;
     padding-right: 20px;
     border: none;
+    outline: none;
     position: relative; }
 
 .btn--search {
@@ -243,9 +253,9 @@ a {
   padding-top: 285px; }
 
 .map {
-  width: 650px;
-  float: left; }
+  width: 648px;
+  height: 708px;
+  background: url(../img/map.png) center no-repeat; }
 
 .settings {
-  width: 650px;
-  float: right; }
+  width: 648px; }
