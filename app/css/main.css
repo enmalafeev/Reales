@@ -694,7 +694,7 @@ input {
 
 .bedrooms,
 .bathrooms {
-  color: #e8e8e8;
+  color: #515151;
   padding: 8px;
   -webkit-border-radius: 2px;
   border-radius: 2px; }
@@ -1022,7 +1022,7 @@ hr {
     display: inline-block;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background-color: #e8e8e8;
+    background-color: #515151;
     background-image: url("../img/testi.jpeg");
     -webkit-background-size: cover;
       -webkit-background-size--o-background-size: cover;

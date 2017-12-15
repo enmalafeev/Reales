@@ -22,17 +22,98 @@ a
 .wrapper
 	width: 1366px
 	min-height: 768px
-	margin: 0 auto
-	
+	margin: 0 auto  
+
 .header
+	height: 60px
+	border: 1px solid $light-grey
+	display: flex
+	-webkit-justify-content: space-between 
+	justify-content: space-between 
+	
+.search
+	width: 1160px
+	display: flex
+	-webkit-flex-wrap: nowrap 
+	-ms-flex-wrap: nowrap 
+	flex-wrap: nowrap
+	-webkit-justify-content: space-between 
+	 justify-content: space-between  
+	
+	&__menu
+		width: 60px
+		height: 60px
+		
+		img
+			display: block
+			margin: auto
+			padding-top: 24px
+			 
+	
+	&__input
+		width: 1000px
+		height: 58px
+		padding-left: 20px
+		padding-right: 20px
+		border: none
+		position: relative 
+		
+		
+.btn--search
+	position: absolute
+	width: 13px
+	height: 13px
+	top: 24px
+	left: 94px
+	background: url('../img/search.svg') center no-repeat
+	 
+			
+.notifications
+	width: 205px
+	height: 60px
+	padding-right: 35px
+	
+	&__item
+		width: 25px
+		height: 25px
+		background: url(../img/notify.svg) center no-repeat
+		position: relative 
+		
+		.counter
+			color: $white
+			display: block
+			width: 14px
+			height: 14px
+			-webkit-border-radius: 50% 
+			border-radius: 50%
+			background-color: $red  
+			position: absolute
+			top: 0
+			right: 0
+			
+			span
+				display: block
+				font-size: 11px
+				line-height: 14px
+				text-align: center
+				
+				
+				
+.notifications-wrap
 	width: 100%
 	height: 60px
-	border: 1px solid black
+	margin: 0 auto
+	display: flex
+	-webkit-justify-content: space-between 
+	 justify-content: space-between
+	-webkit-align-items: center 
+	  align-items: center   
+
+
 	
 .sidebar
 	width: 70px
-	height: 768px
-	float: left
+	height: 100vh
 	background-color: $dark-green
 	color: white
 	
@@ -59,21 +140,45 @@ a
 					background-color: $green-hover
 					fill: white
 				
-		
+
+// USER_BLOCK		
 .user-block
-	width: 70px
+	width: 120px
 	height: 60px
+	padding-left: 20px
+	padding-right: 20px
 	text-align: center
-	
+	display: flex
+	-webkit-flex-wrap: nowrap 
+	-ms-flex-wrap: nowrap 
+	flex-wrap: nowrap 
+	-webkit-justify-content: space-between 
+	justify-content: space-between 
+	-webkit-align-items: center 
+	align-items: center 
+
 	&__logo
 		width: 45px
 		height: 45px
 		display: inline-block
 		-webkit-border-radius: 50% 
 			border-radius: 50% 	
-		background-color: grey
-		margin: 7.5px auto
+		background-color: grey	
 	
+	&__name
+		display: block
+		color: $grey
+		position: relative
+		
+		&:after
+			content: ''
+			position: absolute
+			top: 8px
+			right: -12px
+			width: 7px
+			height: 4px
+			background: url(../img/arrow.svg) no-repeat center	
+			
 .user-block--nav
 	padding-top: 285px
 
