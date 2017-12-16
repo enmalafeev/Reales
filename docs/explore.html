@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Reales Explorer</title>
 	<link rel="stylesheet" href="css/explore.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
 					<a href="#"><img src="img/bars.svg" alt="bars"></a>
 				</div>
 				<label><input type="text" class="search__input" placeholder="Search for houses, apartments..."><label>
-				<a href="#" class="btn btn--search"></a>
+				<button class="btn btn--search"></buttob>
 			</div>
 				
 			<div class="notifications">
@@ -105,7 +106,9 @@
 			</ul>
 
 			<div class="user-block user-block--nav">
-				<div class="user-block__logo"></div>
+				<div class="user-block__logo">
+				
+				</div>
 			</div>
 		</div>
 
@@ -119,19 +122,18 @@
 				<h3 class="filters-block__title">Filter your results</h3>
 				<button class="filters-block__btn"></button>
 				<form action="" class="form">
-					<h4 class="property-type">Property Type</h4>
-
-					<select name="property-type">
+					<h4 class="form__title">Property Type</h4>
+					<select name="select" class="form__select">
 						<option value="all">All</option>
 						<option value="all">Property1</option>
 						<option value="all">Property2</option>
 					</select>
 
-					<div class="range-wrap">
+					<div class="range">
 						<h4 class="range__title">Price Range</h4>
-						<input type="range" min="0" max="100" value="25">
+						<input type="range" class="range__range" min="0" max="100" value="25" oninput="range()">
 						<h4 class="range__title">Area Range</h4>
-						<input type="range" min="0" max="100" value="25">
+						<input type="range" class="range__range" min="0" max="100" value="25" oninput="range()">
 					</div>
 
 					<div class="counters">
@@ -197,6 +199,8 @@
 		</div>
 
 	</div>	
+	
+	<script type="text/javascript" src="js/js.js"></script>
 
 </body>
 </html>

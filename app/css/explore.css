@@ -100,6 +100,9 @@ a {
     -webkit-justify-content-justify-content: space-between; }
 
 .header {
+  position: fixed;
+  width: 100vw;
+  left: 60px;
   height: 60px;
   border: 1px solid #cccccc;
   display: -webkit-box;
@@ -112,7 +115,7 @@ a {
           justify-content: space-between; }
 
 .search {
-  width: 1160px;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -123,7 +126,7 @@ a {
   -webkit-justify-content: space-between;
     -webkit-justify-content-justify-content: space-between; }
   .search__menu {
-    width: 60px;
+    width: 10%;
     height: 60px; }
     .search__menu img {
       display: block;
@@ -132,27 +135,31 @@ a {
   .search__input {
     width: 1000px;
     height: 58px;
-    padding-left: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 50px;
     padding-right: 20px;
     border: none;
-    outline: none;
-    position: relative; }
+    outline: none; }
 
 .btn--search {
   position: absolute;
   width: 13px;
   height: 13px;
   top: 24px;
-  left: 94px;
+  left: 95px;
+  border: none;
+  cursor: pointer;
   background: url("../img/search.svg") center no-repeat; }
 
 .notifications {
-  width: 205px;
+  width: 20%;
   height: 60px;
-  padding-right: 35px; }
+  margin-right: 90px; }
   .notifications__item {
     width: 25px;
     height: 25px;
+    cursor: pointer;
     background: url(../img/notify.svg) center no-repeat;
     position: relative; }
     .notifications__item .counter {
@@ -186,6 +193,7 @@ a {
     -webkit-align-items-align-items: center; }
 
 .sidebar {
+  position: fixed;
   width: 70px;
   height: 100vh;
   background-color: #213837;
@@ -193,7 +201,7 @@ a {
   .sidebar__logo {
     width: 70px;
     height: 60px;
-    line-height: 60px;
+    line-height: 70px;
     text-align: center;
     background-color: #0eaaa6; }
   .sidebar ul li a {
@@ -211,7 +219,6 @@ a {
 .user-block {
   width: 120px;
   height: 60px;
-  padding-left: 20px;
   padding-right: 20px;
   text-align: center;
   display: -webkit-box;
@@ -250,12 +257,75 @@ a {
       background: url(../img/arrow.svg) no-repeat center; }
 
 .user-block--nav {
-  padding-top: 285px; }
+  padding-top: 160px;
+  padding-left: 12px;
+  position: relative; }
 
 .map {
-  width: 648px;
-  height: 708px;
-  background: url(../img/map.png) center no-repeat; }
+  position: fixed;
+  top: 61px;
+  left: 70px;
+  width: 50vw;
+  height: 100vh; }
 
 .settings {
-  width: 648px; }
+  margin-left: -webkit-calc(50vw + 60px);
+  margin-left: calc(50vw + 60px);
+  margin-top: 60px; }
+
+.filters-block__title {
+  font-family: "OpenSansLight", sans-serif;
+  font-size: 16px;
+  font-weight: 300; }
+
+.filters-block__btn {
+  width: 22px;
+  height: 22px;
+  border: none;
+  cursor: pointer;
+  background: url(../img/filter.svg) center no-repeat; }
+
+.form__title {
+  font-size: 13px;
+  font-weight: 600; }
+
+.form__select {
+  width: 285px;
+  height: 38px;
+  padding-left: 15px;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; }
+
+.range {
+  width: 590px; }
+  .range__range {
+    width: 285px;
+    height: 3px;
+    background-color: #cccccc;
+    outline: none;
+    -webkit-appearance: none;
+    background: -webkit-linear-gradient(left, #0eaaa6 0%, #0eaaa6 25%, #cccccc 25%, #cccccc 100%);
+    border: 1px #cccccc; }
+    .range__range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      border: 1px solid #cccccc;
+      background-color: #ffffff;
+      cursor: pointer; }
+    .range__range::-moz-range-track {
+      width: 285px;
+      height: 3px;
+      background-color: #cccccc;
+      outline: none;
+      border: 1px #cccccc; }
+    .range__range::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid #cccccc;
+      background-color: #ffffff;
+      cursor: pointer; }

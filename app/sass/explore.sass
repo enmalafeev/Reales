@@ -31,6 +31,9 @@ a
 	   justify-content: space-between    
 
 .header
+	position: fixed
+	width: 100vw
+	left: 60px
 	height: 60px
 	border: 1px solid $light-grey
 	display: flex
@@ -38,7 +41,7 @@ a
 	justify-content: space-between 
 	
 .search
-	width: 1160px
+	width: 100%
 	display: flex
 	-webkit-flex-wrap: nowrap 
 	-ms-flex-wrap: nowrap 
@@ -47,7 +50,7 @@ a
 	 justify-content: space-between  
 	
 	&__menu
-		width: 60px
+		width: 10%
 		height: 60px
 		
 		img
@@ -55,15 +58,18 @@ a
 			margin: auto
 			padding-top: 24px
 			 
-	
+
 	&__input
 		width: 1000px
 		height: 58px
-		padding-left: 20px
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		padding-left: 50px 
 		padding-right: 20px
 		border: none
 		outline: none
-		position: relative 
+		
 		
 		
 .btn--search
@@ -71,18 +77,22 @@ a
 	width: 13px
 	height: 13px
 	top: 24px
-	left: 94px
+	left: 95px
+	border: none
+	cursor: pointer
 	background: url('../img/search.svg') center no-repeat
 	 
 			
 .notifications
-	width: 205px
+	width: 20%
 	height: 60px
-	padding-right: 35px
-	
+	margin-right: 90px
+
+
 	&__item
 		width: 25px
 		height: 25px
+		cursor: pointer
 		background: url(../img/notify.svg) center no-repeat
 		position: relative 
 		
@@ -119,6 +129,7 @@ a
 
 // SIDEBAR	
 .sidebar
+	position: fixed
 	width: 70px
 	height: 100vh
 	background-color: $dark-green
@@ -128,7 +139,7 @@ a
 	&__logo
 		width: 70px
 		height: 60px
-		line-height: 60px
+		line-height: 70px
 		text-align: center
 		background-color: $blue 
 		
@@ -153,7 +164,6 @@ a
 .user-block
 	width: 120px
 	height: 60px
-	padding-left: 20px
 	padding-right: 20px
 	text-align: center
 	display: flex
@@ -188,18 +198,96 @@ a
 			background: url(../img/arrow.svg) no-repeat center	
 			
 .user-block--nav
-	padding-top: 285px
+	padding-top: 160px
+	padding-left: 12px
+	position: relative
+	
+	
 	
 // MAP
 .map
-	width: 648px
-	height: 708px
-	background: url(../img/map.png) center no-repeat
+	position: fixed
+	top: 61px
+	left: 70px
+	width: 50vw
+	height: 100vh
+	// background: url(../img/map.png) center no-repeat
 	
 // END MAP	
 
 // SETTINGS
 .settings
-	width: 648px
+	margin-left: calc(50vw + 60px)
+	margin-top: 60px 
 	
 //END SETTINGS
+
+// FILTER BLOCK
+.filters-block
+
+	&__title
+		font-family: "OpenSansLight", sans-serif
+		font-size: 16px
+		font-weight: 300 
+		
+	&__btn
+		width: 22px
+		height: 22px
+		border: none
+		cursor: pointer
+		background: url(../img/filter.svg) center no-repeat  
+
+.form
+	
+	&__title
+		font-size: 13px
+		font-weight: 600
+		
+	&__select
+		width: 285px
+		height: 38px
+		padding-left: 15px 
+		border: 1px solid $light-grey
+		-webkit-border-radius: 2px 
+		border-radius: 2px 
+
+.range
+	width: 590px
+	
+	&__range
+		width: 285px
+		height: 3px
+		background-color: $light-grey
+		outline: none 
+		-webkit-appearance: none
+		background: -webkit-linear-gradient(left, $blue 0%, $blue 25%, $light-grey 25%, $light-grey 100%) 
+		border: 1px $light-grey 
+		
+		&::-webkit-slider-thumb
+			-webkit-appearance: none
+			width: 20px
+			height: 20px
+			-webkit-border-radius: 50% 
+			border-radius: 50%
+			border: 1px solid $light-grey 
+			background-color: $white
+			cursor: pointer
+		
+		&::-moz-range-track
+			width: 285px
+			height: 3px
+			background-color: $light-grey 
+			outline: none
+			border: 1px $light-grey
+			
+		&::-moz-range-thumb
+			width: 20px
+			height: 20px
+			border-radius: 50%
+			border: 1px solid $light-grey 
+			background-color: $white
+			cursor: pointer
+
+
+		 
+// END 	FILTER BLOCK
