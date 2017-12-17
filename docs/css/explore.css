@@ -86,18 +86,10 @@ a {
   text-decoration: none; }
 
 .wrapper {
-  width: 1366px;
-  min-height: 768px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-    -webkit-flex-wrap--ms-flex-wrap: wrap;
-    -webkit-flex-wrap-flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-    -webkit-justify-content-justify-content: space-between; }
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden; }
 
 .header {
   position: fixed;
